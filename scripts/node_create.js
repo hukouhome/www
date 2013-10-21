@@ -8,7 +8,7 @@ $('#page_node_create_submit').live('click',function(){
 
   // 开始：Drupal Services 创建内容（警告：没有设置SSL请不要使用https)
   $.ajax({
-      url: "http://demo.ninghao.net/drupal-app/?q=ninghao_service/node.json",
+      url: "http://192.168.1.107:8080/phone/?q=my_drupal_services/node.json",
       type: 'post',
       data: 'node[type]=page&node[title]=' + encodeURIComponent(title) + '&node[language]=und&node[body][und][0][value]=' + encodeURIComponent(body),
       dataType: 'json',

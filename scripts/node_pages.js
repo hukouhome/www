@@ -1,7 +1,7 @@
 $('#page_node_pages').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://demo.ninghao.net/drupal-app/?q=ninghao_app",
+      url: "http://192.168.1.107:8080/phone/?q=my_app",
       type: 'get',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {

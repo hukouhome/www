@@ -1,7 +1,7 @@
 $('#page_node_view').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://demo.ninghao.net/drupal-app/?q=ninghao_service/node/" + encodeURIComponent(nid) + ".json",
+      url: "http://192.168.1.107:8080/phone/?q=my_drupal_services/node/" + encodeURIComponent(nid) + ".json",
       type: 'get',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -27,7 +27,7 @@ $('#button_node_delete').live("click",function(){
   if (confirm("确认要删除这个内容吗？")) {
     try {
       $.ajax({
-        url: "http://demo.ninghao.net/drupal-app/?q=ninghao_service/node/" + encodeURIComponent(nid) + ".json",
+        url: "http://192.168.1.107:8080/phone/?q=my_drupal_services/node/" + encodeURIComponent(nid) + ".json",
         type: 'delete',
         dataType: 'json',
         error: function (XMLHttpRequest, textStatus, errorThrown) {

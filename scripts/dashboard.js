@@ -3,7 +3,7 @@ var nid; // global node id variable
 $('#page_dashboard').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://demo.ninghao.net/drupal-app/?q=ninghao_service/system/connect.json",
+      url: "http://192.168.1.107:8080/phone/?q=my_drupal_services/system/connect.json",
       type: 'post',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {

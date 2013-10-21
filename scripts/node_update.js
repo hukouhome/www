@@ -1,7 +1,7 @@
 $('#page_node_update').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://demo.ninghao.net/drupal-app/?q=ninghao_service/node/" + encodeURIComponent(nid) + ".json",
+      url: "http://192.168.1.107:8080/phone/?q=my_drupal_services/node/" + encodeURIComponent(nid) + ".json",
       type: 'get',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
